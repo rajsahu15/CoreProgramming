@@ -1,0 +1,15 @@
+git remote add origin https://github.com/rajsahu15/JavaBasics.git
+git init
+git push -u origin main
+git commit -m "first commit"
+git add .
+git add README.md
+git branch -M main
+
+
+select DEPTNO from EMP 
+where
+SAL IN
+
+SELECT MAX(SAL)from EMP GROUP BY DEPTNO
+HAVING MAX(SAL)<(SELECT AVG(SAL)from EMP)
