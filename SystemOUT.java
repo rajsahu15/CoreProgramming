@@ -27,11 +27,11 @@ class PrintStream {
     }
 }
 
-final class System {
+final class Systemop {
 
     public static final PrintStream out = new PrintStream();
 
-    private System() {
+    private Systemop() {
     }
 }
 
