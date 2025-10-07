@@ -16,7 +16,7 @@ public class LinkedList {
     private int size = 0;
 
     public void add(Object element) {
-        if (first == null) {
+        if (size == 0) {
             Node newNode = new Node(element, null);
             first = newNode;
             last = newNode;
@@ -44,22 +44,19 @@ public class LinkedList {
     }
 
     @Override
-    public String toString() {
-        if (size == 0) {
-            return "[]";
-        }
-        String str = "[" + first.data + ", ";
-        Node current = first;
-        while (current.next != null) {
-            current = current.next;
-            str += current.data ;
-            if (current.next != null) {
-                str += ", ";
-            }
-        }
-        str = str + "]";
-        return str;
-    }
+    public String toString(){
+       if(size==0)return "[]";
+       String s1="[";
+       Node curr=first; 
+       for(int i=0;i<size();i++){
+             s1=s1+curr.data;
+             if(curr.next!=null)s1=s1+", ";
+             curr=curr.next;  
+        } 
+       return s1+"]";
+ 
+      }
+
 
     public void add(Object element, int index) {
         if (index <= -1 || index >= size) {
