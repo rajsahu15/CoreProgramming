@@ -12,6 +12,8 @@ public class test3DoubleLinkedList {
         System.out.println(dll);
         dll.add(100, 1);
         System.out.println(dll);
+        dll.reverse();
+        System.out.println(dll);
         
          
 

@@ -84,7 +84,22 @@ public class DoubleLinkedList {
             curr.next.prev = curr;
         } else
             last = curr;
-        size--;
+            size--;
+    }
+    public void reverse() {
+        if (size() <= 1)
+            return;
+        Node curr = first;
+        Node temp = null;
+        while (curr != null) {
+            temp = curr.prev;
+            curr.prev = curr.next;
+            curr.next = temp;
+            curr = curr.prev;
+        }
+        if (temp != null) {
+            first = temp.prev;
+        }
     }
 
     public String toString() {
