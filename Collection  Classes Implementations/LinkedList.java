@@ -33,30 +33,27 @@ public class LinkedList {
     }
 
     public Object get(int index) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index >= size())
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
-        }
-        Node current = first;
-        for (int i = 1; i <= index; i++) {
-            current = current.next;
-        }
-        return current.data;
+
+        return traverse(index);
     }
 
     @Override
-    public String toString(){
-       if(size==0)return "[]";
-       String s1="[";
-       Node curr=first; 
-       for(int i=0;i<size();i++){
-             s1=s1+curr.data;
-             if(curr.next!=null)s1=s1+", ";
-             curr=curr.next;  
-        } 
-       return s1+"]";
- 
-      }
+    public String toString() {
+        if (size == 0)
+            return "[]";
+        String s1 = "[";
+        Node curr = first;
+        for (int i = 0; i < size(); i++) {
+            s1 = s1 + curr.data;
+            if (curr.next != null)
+                s1 = s1 + ", ";
+            curr = curr.next;
+        }
+        return s1 + "]";
 
+    }
 
     public void add(Object element, int index) {
         if (index <= -1 || index >= size) {
@@ -115,6 +112,15 @@ public class LinkedList {
         last = first; // Update last to the old head
         first = prev;
         // Update first to the new head of the reversed list
+    }
+
+    public Object traverse(int index) {
+          Node current=first;
+          for(int i=1;i<=index;i++)
+          {
+           current=current.next;
+          }
+          return current.data;
     }
 
 }

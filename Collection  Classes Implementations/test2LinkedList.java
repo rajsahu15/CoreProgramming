@@ -7,7 +7,7 @@ public class test2LinkedList {
             k += 10;
         }
 
-        System.out.println(linkedList);
+        System.out.println(linkedList.get(5));
 
     }
 }
