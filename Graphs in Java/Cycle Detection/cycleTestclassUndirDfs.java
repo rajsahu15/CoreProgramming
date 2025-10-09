@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class cycleTestclassUndir {
+public class cycleTestclassUndirDfs {
     public static void main(String[] args) {
         int V = 5;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
@@ -27,7 +27,7 @@ public class cycleTestclassUndir {
         adj.get(4).add(2);
         adj.get(2).add(4);
 
-        CycleDetection obj = new CycleDetection();
+        CycleDetectionDirectedDfs obj = new CycleDetectionDirectedDfs();
 
         if (obj.isCyclic(V, adj)) {
             System.out.println("Cycle detected!");

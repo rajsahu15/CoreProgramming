@@ -1,6 +1,8 @@
+
+//Cycle Detection in an Undirected Graph using DFS
 import java.util.ArrayList;
 
-public class CycleDetectUndirected {
+public class CycleDetectUndirectedDfs {
 
     private boolean dfsCheck(int node, int parent,
                              int[] vis, ArrayList<ArrayList<Integer>> adj) {

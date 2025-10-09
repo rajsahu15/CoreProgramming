@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class cycleTestclassDire {
+public class cycleTestclassDireDfs {
      // ====== TEST CLASS ======
     public static void main(String[] args) {
         int V = 5;
@@ -20,7 +20,7 @@ public class cycleTestclassDire {
         adj.get(4).add(2);
         
 
-        CycleDetection obj = new CycleDetection();
+        CycleDetectionDirectedDfs obj = new CycleDetectionDirectedDfs();
 
         if (obj.isCyclic(V, adj)) {
             System.out.println("Cycle detected!");

@@ -1,8 +1,8 @@
-//directed graph using dfs
+//directed graph using dfs cycle detection
 
 import java.util.*;
 
-public class CycleDetection {
+public class CycleDetectionDirectedDfs {
     // DFS check for cycle in a directed graph
     private boolean dfsCheck(int node, ArrayList<ArrayList<Integer>> adj, int[] vis, int[] pathVis) {
         vis[node] = 1;
