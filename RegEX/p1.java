@@ -1,5 +1,5 @@
 import java.util.*;
-
+/*
 public class p1{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class p1{
         String[] tokens = s.split("[^A-Z^a-z]");
 
         // Filter empty tokens (could happen if string starts with punctuation)
-        List<String> result = new ArrayList<>();
+      //  List<String> result = new ArrayList<String>();
         for (String token : tokens) {
             if (!token.isEmpty()) {
                 result.add(token);
@@ -25,4 +25,5 @@ public class p1{
     }
 
 }
+     */
 

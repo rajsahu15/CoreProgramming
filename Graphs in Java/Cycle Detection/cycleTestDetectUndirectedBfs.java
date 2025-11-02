@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+//test class for cycleDetectBFSUndirected
 public class cycleTestDetectUndirectedBfs {
 
-    private static void testCycleDetection(String graphName, int V, ArrayList<ArrayList<Integer>> adj, cycleDetectBFSUndirected solver) {
+    private static void testCycleDetection(String graphName, int V, ArrayList<ArrayList<Integer>> adj,
+     cycleDetectBFSUndirected solver) {
         boolean result = solver.isCycle(V, adj);
         System.out.println("--- " + graphName + " ---");
         System.out.println("Vertices (V): " + V);

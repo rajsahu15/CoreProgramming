@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//test class for directed graph cycle detection using BFS
 public class cycleTestBFSDirected {
     private static void testCycleDetection(String graphName, int V, ArrayList<ArrayList<Integer>> adj,
             CycleDetectDirectedBFS solver) {
